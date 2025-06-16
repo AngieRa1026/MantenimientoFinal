@@ -14,10 +14,10 @@
     <nav>
       <button id="menu-toggle">☰</button>
       <ul id="menu" class="hidden">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            s<li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -30,39 +30,12 @@
     </section>
 
     <section id="servicios">
-  <h2>Servicios Destacados</h2>
-  <p class="subtitulo">DISEÑOS Y ACABADOS EN MADERA A MEDIDA<br>¡DALE VIDA A TUS ESPACIOS CON NUESTRO ARTE!</p>
-
-  <div class="servicios-contenedor">
-    <!-- Columna izquierda -->
-    <div class="servicio izquierda">
-      <img src="icons/muebles.svg" alt="Diseño de muebles">
-      <h3>DISEÑO DE MUEBLES A MEDIDA</h3>
-      <p>Fabricación personalizada de closets, bibliotecas, cocinas y muebles para baño.</p>
-
-      <img src="icons/restauracion.svg" alt="Restauración">
-      <h3>RESTAURACIÓN DE MUEBLES</h3>
-      <p>Recuperamos el valor estético y funcional de tus muebles antiguos.</p>
-    </div>
-
-    <!-- Imagen central (puede ser slider o comparativa) -->
-    <div class="slider-servicios">
-      <img src="img/carpinteria-antes-despues.jpg" alt="Antes y después carpintería">
-    </div>
-
-    <!-- Columna derecha -->
-    <div class="servicio derecha">
-      <img src="icons/pisos.svg" alt="Pisos">
-      <h3>INSTALACIÓN DE PISOS EN MADERA</h3>
-      <p>Montaje profesional de pisos laminados, flotantes y vinílicos de aspecto madera.</p>
-
-      <img src="icons/puertas.svg" alt="Puertas">
-      <h3>FABRICACIÓN DE PUERTAS</h3>
-      <p>Diseños clásicos y modernos en puertas interiores o exteriores en madera sólida.</p>
-    </div>
-  </div>
-</section>
-
+      <h2>Servicios</h2>
+      <ul>
+        <li><h3>Muebles a Medida</h3><p>Fabricamos piezas únicas adaptadas a tus espacios.</p></li>
+        <li><h3>Diseño Personalizado</h3><p>Trabajamos contigo para crear el mueble de tus sueños.</p></li>
+      </ul>
+    </section>
 
     <section id="galeria">
       <h2>Galería</h2>
@@ -73,16 +46,37 @@
       </div>
     </section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <form id="formulario">
-        <label>Nombre:<input type="text" name="nombre" required></label>
-        <label>Email:<input type="email" name="email" required></label>
-        <label>Mensaje:<textarea name="mensaje" required></textarea></label>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+  <section class="contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes un proyecto en mente? ¡Hablemos y lo hacemos realidad!</p>
+
+        <form class="formulario-contacto" id="formulario" action="https://formspree.io/f/tuID" method="POST">
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+            </div>
+
+            <div class="campo">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="300 123 4567">
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntanos sobre tu idea..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+    
+        </form>
+</section>
+
+
 
   <footer>
     <p>&copy; 2025 Carpintería Artesanal. Todos los derechos reservados.</p>
