@@ -1,0 +1,103 @@
+/* Estilo base - Mobile First */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f2ee;
+  color: #333;
+}
+
+header {
+  background: #7b5e3b;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav ul li a:hover {
+  background: #a77f4c;
+}
+
+#menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  padding: 1.5rem;
+}
+
+video, img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, textarea, button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #7b5e3b;
+  color: white;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #a77f4c;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .slider {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .slider img {
+    width: 30%;
+  }
+}
